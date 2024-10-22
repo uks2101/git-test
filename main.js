@@ -3,3 +3,9 @@
 function all () {
   console.log();
 }
+function all () {
+  console.log();
+}
+function all () {
+  console.log();
+}
