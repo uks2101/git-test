@@ -9,6 +9,8 @@ body > * + * {border-top: 1px solid #000;}
 header {display: flex; align-items: center; justify-content: space-between; padding: 0 50px; min-height: 120px; grid-area: header;}
 
 main {display: flex; grid-area: content;}
+main {display: flex; grid-area: content;}
+main {display: flex; grid-area: content;}
 
 main > section {width: 100%; min-height: 300px; display: flex; align-items: center; justify-content: center; color: #fff;}
 main > section:nth-child(1) {background-color: green;}
