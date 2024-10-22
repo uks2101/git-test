@@ -1,1 +1,29 @@
 @charset "utf-8";
+
+:root[data-color-theme=yellow] {
+  --bg-color: yellow;
+}
+
+:root[data-color-theme=green] {
+  --bg-color: green;
+}
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html, body {width: 100%; height: 100%;}
+a {text-decoration: none;}
+
+.container {display: flex; flex-direction: column;}
+header {position: sticky; display: flex; align-items: center; justify-content: space-between; padding: 0 50px; height: 100px; top: 0px; background-color: black; color: #000;}
+header a {color: inherit;}
+main {display: flex; flex-direction: column;}
+main > section {width: 100%; height: 2000px;}
+main > section:nth-child(1) {background-color: beige;}
+main > section:nth-child(2) {background-color: aquamarine;}
+main > section:nth-child(3) {background-color: gray;}
+
+.flexTest {display: flex; border: 1px solid #000; flex-direction: column;}
+.flexTest > div {width: 30px; min-height: 30px; border: 1px solid #000; flex-basis: 20%;}
+.flexTest > div:nth-child(1) {background-color: gray;}
+
+.gridTest {display: grid; border: 1px solid #000; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);}
+.gridTest > div {border: 1px solid #000; min-height: 50px;}
